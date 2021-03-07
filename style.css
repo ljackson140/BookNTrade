@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  --header1: calc(2rem + 1vw);
+  --header2: calc(3.5rem + 1vw);
+  --header3: calc(3rem + 1vw);
+  --text: calc(1.5rem + 1vw);
+  --color-DarkBrown: #321f28;
+  --color-LightBrown: #734046;
+  --color-Brown: #a05344;
+  --color-tan: #e79e4f;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: var(--color-Brown);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+  background: var(--color-tan);
+}
+
+/* NAV SECTION */
+.main-head {
+  background: var(--color-DarkBrown);
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+nav {
+  display: flex;
+  width: 90%; /* pushing the content*/
+  margin: auto; /*height*/
+  padding: 2rem;
+  min-height: 10vh; /* more space - downwards*/
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Cutive Mono", monospace;
+  font-weight: 400;
+}
+
+/* HERO SECTION */
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url("./imgs/radu-marcusu-mbKApJz6RSU-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+/* BOOKS SECTION */
+#book {
+  min-height: 100vh;
+  background: url("./imgs/henry-be-TCsCykbwSJw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: auto;
+}
+
+.books-head {
+  width: 90%;
+  margin: auto;
+}
+
+.books-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+}
+
+.books-head h3 {
+  padding: 4rem 0rem;
+  background: linear-gradient(var(--color-Brown), var(--color-tan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ADD ANIMATIONS IF NEEDED */
+
+/* TRADE SECTION */
+.trade-head {
+  background: var(--color-Brown);
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.trade-head h3 {
+  padding: 1rem;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.cards img {
+  max-width: 15%;
+  margin: 2rem;
+}
+
+.card h4,
+.card p {
+  padding: 2rem;
+  line-height: 1.8;
+}
+
+.card-icon {
+  background: var(--color-LightBrown);
+}
+
+/* CONTACT SECTIOIN */
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./imgs/lacie-slezak-yHG6llFLjS0-unsplash.jpg");
+  background: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form {
+  background: var(--color-LightBrown);
+  width: 60%;
+  color: white;
+  border-radius: 20px;
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+.name-form,
+.email-form {
+  padding: 3rem;
+  text-align: center;
+}
+
+.contact-form label {
+  margin: 0rem 3rem;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.contact-form input {
+  padding: 1rem 3rem;
+}
+
+/* FOOTER SECTION */
+footer {
+  background: var(--color-DarkBrown);
+  color: white;
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footer-logo {
+  flex: 2 1 40rem;
+  font-family: "Cutive Mono", monospace;
+  font-weight: 400;
+}
+
+/* MEDIA QUERIES FOR ALL DEVICES*/
+
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  #footer-logo {
+    padding: 2rem;
+  }
+  .books-head h3 {
+    background: rgba(19, 28, 39, 0.9);
+    -webkit-text-fill-color: white;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h5 {
+    padding-bottom: 3rem;
+  }
+}
